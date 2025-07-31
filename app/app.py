@@ -14,7 +14,7 @@ from tabs.utils import *
 import os
 
 # Ruta absoluta al favicon
-FAVICON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../recursos/favicon.png'))
+FAVICON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../images/favicon.png'))
 
 st.set_page_config(
     page_title="Trading Analytics App",
@@ -935,7 +935,7 @@ def main():
     
     # Encabezado con imagen BFUNDED
     import os
-    bfunded_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../recursos/BFUNDED.png'))
+    bfunded_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../images/BFUNDED.png'))
     col_logo, col_title = st.columns([1, 6])
     with col_logo:
         st.image(bfunded_path, width=480)

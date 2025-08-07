@@ -13,12 +13,15 @@ from tabs.utils import *
 
 import os
 
+
+
+
 # Ruta absoluta al favicon
 FAVICON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'images/favicon.png'))
 
 
 st.set_page_config(
-    page_title="Trading Analytics App",
+    page_title="Optimización reportes Bfunded",
     page_icon=FAVICON_PATH,
     layout="wide"
 )
@@ -26,6 +29,9 @@ st.set_page_config(
 # ================================================================================================
 # INICIALIZACIÓN DEL ESTADO
 # ================================================================================================
+
+
+
 
 def initialize_session_state():
     """Inicializa el estado de la sesión"""
@@ -949,6 +955,26 @@ def main():
 # ================================================================================================
 # EJECUCIÓN
 # ================================================================================================
+
+# ================================================================================================
+    # SECCIÓN DE TELEGRAM
+    # ================================================================================================
+    st.markdown("---")
+    st.markdown("""
+    ### 📱 ¡Únete a nuestra comunidad en Telegram!
+    
+    ¿Quieres mantenerte actualizado con las últimas noticias, consejos y estrategias de trading? 
+    
+    📊 **En nuestro canal encontrarás:**
+    - Actualizaciones de la plataforma
+    - Tips de trading
+    - Estrategias exclusivas
+    - Soporte directo
+    - Comunidad activa de traders
+    
+    [🔵 ¡Únete ahora a BFunded en Telegram!](https://t.me/+nn53nEqHil1lYWJh)
+    """)
+
 
 if __name__ == "__main__":
     main()
